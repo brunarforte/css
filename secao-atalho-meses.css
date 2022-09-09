@@ -1,0 +1,77 @@
+/*
+* @filename secao-atalho-meses.css
+* @author Bruna da Rocha Forte <bruna@prograd.ufc.br>
+* @version 1.0, 2022-09-09
+* 
+* O código a seguir estiliza uma lista de meses para criar atalhos para
+* seçoes de páginas com muito conteúdo publicado para um mesmo ano, como 
+* resultado de processos de um determinado ano, no site da Pro Reitoria de 
+* graduação da UFC.
+*/
+/**PARA CELULARES E TELAS PEQUENAS*/
+@media screen and (max-width:425px){
+#secao-atalho-meses div{
+width:185px;
+height:145px;
+}
+}
+/**PARA TELAS MAIORES*/
+@media screen and (min-width: 426px){
+#secao-atalho-meses div{
+width:310px;
+height:82px;
+}
+}
+/**GERAL*/
+@media all{
+#secao-atalho-meses{
+padding:5px 0;
+}
+#secao-atalho-meses div{
+margin:auto;
+}
+
+ul#lista-atalho-meses {
+list-style-type: none;
+margin:0; 
+padding:0;
+}
+
+#lista-atalho-meses li{
+display:inline;
+}
+
+
+#lista-atalho-meses  abbr{
+color:inherit;
+text-decoration:none;
+}
+
+#lista-atalho-meses a {
+line-height:35px;
+padding:5px;
+margin:2.5px;
+color:black;
+background: #eee;
+border: 1px solid #eee;
+border-radius:2.5px;
+text-decoration:none;
+text-transform: uppercase;
+font-family: "Lucida Console", "Courier New", monospace;
+}
+#lista-atalho-meses a:link{
+
+}
+#lista-atalho-meses a:visited{
+
+}
+
+#lista-atalho-meses a:hover{
+outline: 2.5px solid #d0d0d0;
+border: 1px solid #d0d0d0;
+background: #d0d0d0;
+}
+#lista-atalho-meses a:active{ 
+font-weight: bold;
+}
+}/*fim @media all*/
